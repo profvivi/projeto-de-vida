@@ -64,7 +64,7 @@ body {
   border-bottom: 4px solid var(--verde);
 }
 
-/*quando a largura mínima da tela for maior que 768px.*/
+
 
 /*transformar a disposição dos elementos em flexível.*/
  
@@ -73,7 +73,8 @@ Dentro dele, adicionamos border-radius: 40px 0 0 0;
 para informar que somente o canto superior esquerdo será arredondado.*/
   
 /*botão com :last-child, dessa vez informando que o canto arredondado será do lado direito*/
-  
+ 
+/*quando a largura mínima da tela for maior que 768px.*/
 @media screen and (min-width: 768px) { 
     .botoes { 
     display: flex;
