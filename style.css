@@ -58,3 +58,21 @@ body {
 .botoes {
   display: block;
 }
+
+/*quando a largura mínima da tela for maior que 768px.*/
+@media screen and (min-width: 768px) {
+/*transformar a disposição dos elementos em flexível.*/
+   .botoes {
+    display: flex;
+  }
+/*pseudo-classe :first-child.
+Dentro dele, adicionamos border-radius: 40px 0 0 0; 
+para informar que somente o canto superior esquerdo será arredondado.*/
+  .botao:first-child {
+    border-radius: 40px 0 0 0;
+  }
+/*botão com :last-child, dessa vez informando que o canto arredondado será do lado direito*/
+  .botao:last-child {
+    border-radius: 0 40px 0 0;
+  }
+}
